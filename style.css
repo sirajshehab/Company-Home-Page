@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  font-family: "Lexend Mega", sans-serif;
+  color: black;
+  background-color: white;
+  font-size: 22px;
+  text-align: center;
+}
+
+a {
+  color: black;
+}
+
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 10px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: beige;
+}
+
+header h1 {
+  margin: 10px 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 10%;
+}
+
+nav p {
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+main {
+  padding-top: 120px;
+  opacity: 0.9;
+}
+
+.mission {
+  display: flex;
+  height: 500px;
+  background-image: url("https://codecademy-content.s3.amazonaws.com/PRO/independent-practice-projects/flexbox-business-site/img/skyscrapers.jpg");
+  padding-top: 0px;
+}
+
+.mission .content {
+  margin: auto;
+  background-color: white;
+  width: 100%;
+}
+
+.content {
+  margin-top: 100px;
+}
+
+#portfolio {
+  /* min-height: 500px; */
+  margin: auto;
+  /* padding-top: 70px; */
+}
+
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.company {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  padding: 10px;
+  height: auto;
+}
+
+.company span {
+  padding: 5px;
+  min-width: 240px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#team-container {
+  margin-top: 75px;
+}
+
+.team {
+  background-image: url("https://codecademy-content.s3.amazonaws.com/PRO/independent-practice-projects/flexbox-business-site/img/blurred-road.jpg");
+  padding-top: 70px;
+  padding-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.teammate {
+  padding: 10px;
+  color: white;
+  flex-basis: 280px;
+}
+
+.teammate img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: auto;
+}
+
+.contact,
+.copyright {
+  padding-top: 20px;
+}
+
+.contact {
+  margin-top: 150px;
+  background-color: rgb(119, 119, 245);
+  padding-bottom: 7px;
+}
+
+.copyright {
+  margin-top: 100px;
+}
+
+#team-tablet,
+#portfolio-tablet,
+#team-mobile,
+#portfolio-mobile {
+  display: none;
+}
+
+header img {
+  display: none;
+}
+
+@media only screen and (max-width: 1143px) and (min-width: 755px) {
+
+  #team,
+  #portfolio {
+    display: none;
+  }
+
+  #team-tablet,
+  #portfolio-tablet {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 755px) {
+
+  #team,
+  #portfolio,
+  #team-tablet,
+  #portfolio-tablet {
+    display: none;
+  }
+
+  #team-mobile,
+  #portfolio-mobile {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  nav {
+    display: none;
+  }
+
+  .main {
+    padding-top: 75px;
+  }
+
+  header {
+    flex-direction: row;
+    align-items: start;
+    padding-left: 10px;
+  }
+
+  header img {
+    display: flex;
+    width: 50px;
+    align-self: center;
+    padding-left: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 625px) {
+
+}
